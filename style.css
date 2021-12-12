@@ -66,6 +66,9 @@ body {
 }
 
 @media only screen and (max-width: 650px) {
+    body {
+        width: 415px;
+    }
     .calculator-grid {
         margin-top: 15px;
     }
