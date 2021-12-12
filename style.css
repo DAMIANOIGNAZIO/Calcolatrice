@@ -9,7 +9,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(245, 0, 0);
+    background-color: black;
 }
 
 .calculator-grid {
@@ -22,11 +22,12 @@ body {
 }
 
 .calculator-grid>button {
+    border-radius: 100px;
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid white;
     outline: none;
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgb(83, 78, 78);
+    color: white;
 }
 
 .calculator-grid>button:hover {
@@ -40,6 +41,7 @@ body {
 .output {
     grid-column: 1 / -1;
     background-color: #222;
+    border-radius: 20px;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -57,4 +59,17 @@ body {
 .output .current-operand {
     color: white;
     font-size: 2.5rem;
+}
+
+.calculator-grid #colorati {
+    background-color: rgb(255, 175, 1);
+}
+
+@media only screen and (max-width: 650px) {
+    .calculator-grid {
+        margin-top: 15px;
+    }
+    .output {
+        margin-top: -48px;
+    }
 }
